@@ -6,7 +6,8 @@ const config: UserConfig = {
 	css: {
 		preprocessorOptions: {
 			scss: {
-				// additionalData: '@use "src/lib/styles/mixins" as *; @use "src/lib/styles/layout" as *;'
+				additionalData:
+					'@use "src/lib/design/abstracts/mixins"; @use "src/lib/design/abstracts/layout";'
 			}
 		}
 	}

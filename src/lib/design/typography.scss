@@ -48,7 +48,7 @@
 body {
 	font-family: var(--ff-sans);
 	line-height: 1.8;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: var(--fs-base);
 	letter-spacing: 2px;
 }
@@ -72,16 +72,21 @@ p {
 }
 
 h3 {
+	font-weight: 500;
 	margin-top: layout.$spacing-lg;
-	font-size: var(--fs-base);
+	font-size: var(--fs-md);
 }
 
 h2 {
 	margin-top: layout.$spacing-2xl;
-	font-size: var(--fs-md);
+	font-size: var(--fs-lg);
 }
 
 h1 {
 	font-weight: 700;
-	font-size: var(--fs-lg);
+	font-size: var(--fs-xl);
+}
+
+svg {
+	line-height: 0.8;
 }

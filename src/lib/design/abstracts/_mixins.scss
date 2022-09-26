@@ -1,12 +1,5 @@
 @use './layout';
 
-@mixin mobile-view {
-	@media only screen and (max-width: layout.$width-mobile) {
-		// screens smaller than 480px
-		@content;
-	}
-}
-
 @mixin on-mobile {
 	@media only screen and (max-width: 425px) {
 		// screens smaller than 425px
@@ -42,7 +35,7 @@
 	}
 }
 
-@mixin padding-lr {
+@mixin page-padding-lr {
 	padding-left: layout.$spacing-md;
 	padding-right: layout.$spacing-md;
 	@include on-tablet {
@@ -61,4 +54,10 @@
 		padding-left: layout.$spacing-3xl;
 		padding-right: layout.$spacing-3xl;
 	}
+}
+
+@mixin center-children {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
