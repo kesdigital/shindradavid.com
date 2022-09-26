@@ -1,13 +1,13 @@
 @use './abstracts/mixins';
 @use './abstracts/layout';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 :root {
 	/* font-family */
-	--ff-sans: 'Montserrat', Helvetica, Arial, sans-serif;
-	--ff-mono: 'Source Code Pro', 'Fira Code', 'Fira Mono', 'DejaVu Sans Mono', monospace;
-	--ff-serif: 'Playfair Display', serif;
+	--ff-serif: sans-serif;
+	--ff-sans: 'Raleway', Helvetica, Arial, sans-serif;
+	--ff-mono: 'Source Code Pro', 'Fira Code', 'Fira Mono', monospace;
 	/* font-size */
 	font-size: 62.5%;
 	--fs-xs: 1.2rem;
@@ -50,6 +50,7 @@ body {
 	line-height: 1.8;
 	font-weight: 400;
 	font-size: var(--fs-base);
+	letter-spacing: 2px;
 }
 
 a {
@@ -64,7 +65,6 @@ h5,
 h6 {
 	font-weight: 600;
 	line-height: 1.2;
-	font-family: var(--ff-serif);
 }
 
 p {
@@ -72,12 +72,12 @@ p {
 }
 
 h3 {
-	margin-top: layout.$spacing-xl;
+	margin-top: layout.$spacing-lg;
 	font-size: var(--fs-base);
 }
 
 h2 {
-	margin-top: layout.$spacing-3xl;
+	margin-top: layout.$spacing-2xl;
 	font-size: var(--fs-md);
 }
 
