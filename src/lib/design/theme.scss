@@ -1,0 +1,73 @@
+:root {
+	--gray-0: hsl(0, 0%, 100%);
+	--gray-100: hsl(0, 0%, 90%);
+	--gray-200: hsl(0, 0%, 80%);
+	--gray-300: hsl(0, 0%, 70%);
+	--gray-400: hsl(0, 0%, 60%);
+	--gray-500: hsl(0, 0%, 50%);
+	--gray-600: hsl(0, 0%, 40%);
+	--gray-700: hsl(0, 0%, 30%);
+	--gray-800: hsl(0, 0%, 20%);
+	--gray-900: hsl(0, 0%, 10%);
+	// background
+	--bg-base: hsl(0, 0%, 14%);
+	--bg-elevated-base: hsl(0, 0%, 10%);
+	--bg-elevated-strong: hsl(0, 0%, 18%);
+	--bg-btn: hsl(0, 0%, 24%);
+	--bg-elevated-strong: var(--gray-700);
+	--bg-code: hsl(0, 0%, 16%);
+	// border and outline
+	// text
+	--txt-strong: var(--gray-0);
+	--txt-base: var(--gray-200);
+	--txt-muted: var(--gray-300);
+	--txt-btn-primary: #131313;
+	// brand
+	--accent-color: #feb401;
+	// functional
+	--txt-danger: ;
+	--txt-success: ;
+	--txt-info: ;
+	--txt-warning: ;
+	// effects
+	--shadow-base: hsla(0, 0%, 0%, 0.3);
+	--outline-base: ;
+	--outline-muted: ;
+
+	color: var(--txt-base);
+	background-color: var(--bg-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+strong {
+	color: var(--txt-strong);
+}
+
+body {
+	/* width */
+	&::-webkit-scrollbar {
+		height: 6px;
+		width: 6px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: var(--bg-base);
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: var(--gray3);
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: var(--gray4);
+	}
+}

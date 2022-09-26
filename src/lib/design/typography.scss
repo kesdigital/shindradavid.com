@@ -1,0 +1,87 @@
+@use './abstracts/mixins';
+@use './abstracts/layout';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root {
+	/* font-family */
+	--ff-sans: 'Montserrat', Helvetica, Arial, sans-serif;
+	--ff-mono: 'Source Code Pro', 'Fira Code', 'Fira Mono', 'DejaVu Sans Mono', monospace;
+	--ff-serif: 'Playfair Display', serif;
+	/* font-size */
+	font-size: 62.5%;
+	--fs-xs: 1.2rem;
+	--fs-sm: 1.4rem;
+	--fs-base: 1.6rem;
+	--fs-md: 1.8rem;
+	--fs-lg: 2.4rem;
+	--fs-xl: 3.2rem;
+	--fs-2xl: 4.8rem;
+
+	@include mixins.on-laptop {
+		--fs-xs: 1.4rem;
+		--fs-sm: 1.6rem;
+		--fs-base: 1.8rem;
+		--fs-md: 2.4rem;
+		--fs-lg: 3.2rem;
+		--fs-xl: 4.8rem;
+		--fs-2xl: 5.6rem;
+	}
+
+	@supports (font-size: clamp(1.6rem, 1.536rem + 0.18vw, 1.8rem)) {
+		--fs-xs: clamp(1.2rem, 1.136rem + 0.18vh, 1.4rem);
+		--fs-sm: clamp(1.4rem, 1.22rem + 0.18vh, 1.6rem);
+		--fs-base: clamp(1.6rem, 1.536rem + 0.18vw, 1.8rem);
+		--fs-md: clamp(1.8rem, 1.776rem + 0.71vw, 2.4rem);
+		--fs-lg: clamp(2.4rem, 2rem + 1.07vw, 3.2rem);
+		--fs-xl: clamp(3.2rem, 2.22rem + 1.79vw, 4.8rem);
+		--fs-2xl: clamp(4.8rem, 2.22rem + 1.79vw, 5.6rem);
+	}
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-family: var(--ff-sans);
+	line-height: 1.8;
+	font-weight: 400;
+	font-size: var(--fs-base);
+}
+
+a {
+	font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.2;
+	font-family: var(--ff-serif);
+}
+
+p {
+	margin-top: layout.$spacing-md;
+}
+
+h3 {
+	margin-top: layout.$spacing-xl;
+	font-size: var(--fs-base);
+}
+
+h2 {
+	margin-top: layout.$spacing-3xl;
+	font-size: var(--fs-md);
+}
+
+h1 {
+	font-weight: 700;
+	font-size: var(--fs-lg);
+}
