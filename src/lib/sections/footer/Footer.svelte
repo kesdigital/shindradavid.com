@@ -77,7 +77,7 @@
 						font-size: var(--fs-md);
 						@include mixins.center-children;
 						a {
-							padding: layout.$spacing-md;
+							padding: layout.$spacing-sm;
 							border: 1px solid currentColor;
 							line-height: 0.8;
 						}
