@@ -10,27 +10,27 @@
 
 <footer class="footer">
 	<section class="footer__top-section">
-		<section>
+		<div>
 			<p>shindra david</p>
 			<p>Am a freelance web developer based in Uganda.</p>
-		</section>
+		</div>
 		<div class="get-in-touch">
 			<h3>Get in touch</h3>
 			<ul>
 				<li>
-					<a href="tel:+256702557298"><PhoneLine /></a>
+					<a href="tel:+256702557298" title="Phone"><PhoneLine /></a>
 				</li>
 				<li>
-					<a href="tel:+256702557298"><WhatsAppLine /></a>
+					<a href="tel:+256702557298" title="WhatsApp"><WhatsAppLine /></a>
 				</li>
 				<li>
-					<a href="https://twitter.com/ShindraDavid"><TwitterLine /></a>
+					<a href="https://twitter.com/ShindraDavid" title="Twitter"><TwitterLine /></a>
 				</li>
 				<li>
-					<a href="mailto:shindradavid.dev@gmail.com"><MailLine /></a>
+					<a href="mailto:shindradavid.dev@gmail.com" title="Email"><MailLine /></a>
 				</li>
 				<li>
-					<a href="https://github.com/shindradavid"><GithubLine /></a>
+					<a href="https://github.com/shindradavid" title="Github"><GithubLine /></a>
 				</li>
 			</ul>
 		</div>
@@ -75,10 +75,10 @@
 					li {
 						list-style: none;
 						font-size: var(--fs-md);
-						padding: layout.$spacing-md;
-						border: 1px solid currentColor;
 						@include mixins.center-children;
 						a {
+							padding: layout.$spacing-md;
+							border: 1px solid currentColor;
 							line-height: 0.8;
 						}
 					}
