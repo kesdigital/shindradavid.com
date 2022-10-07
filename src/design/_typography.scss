@@ -1,7 +1,4 @@
-@use './abstracts/mixins';
-@use './abstracts/layout';
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@use './abstracts/mixins' as *;
 
 :root {
 	/* font-family */
@@ -18,7 +15,7 @@
 	--fs-xl: 3.2rem;
 	--fs-2xl: 4.8rem;
 
-	@include mixins.on-laptop {
+	@include screen-md {
 		--fs-xs: 1.4rem;
 		--fs-sm: 1.6rem;
 		--fs-base: 1.8rem;
@@ -37,24 +34,19 @@
 		--fs-xl: clamp(3.2rem, 2.22rem + 1.79vw, 4.8rem);
 		--fs-2xl: clamp(4.8rem, 2.22rem + 1.79vw, 5.6rem);
 	}
+}
 
+body {
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
-}
-
-body {
-	font-family: var(--ff-sans);
 	line-height: 1.8;
 	font-weight: 500;
-	font-size: var(--fs-base);
 	letter-spacing: 2px;
-}
-
-a {
-	font-weight: 600;
+	font-size: var(--fs-base);
+	font-family: var(--ff-sans);
 }
 
 h1,
@@ -63,30 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 1.2;
-}
-
-p {
-	margin-top: layout.$spacing-md;
-}
-
-h3 {
-	font-weight: 500;
-	margin-top: layout.$spacing-lg;
-	font-size: var(--fs-md);
-}
-
-h2 {
-	margin-top: layout.$spacing-2xl;
-	font-size: var(--fs-lg);
-}
-
-h1 {
-	font-weight: 700;
-	font-size: var(--fs-xl);
-}
-
-svg {
-	line-height: 0.8;
+	font-family: var(--ff-serif);
 }

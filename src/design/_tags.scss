@@ -1,11 +1,11 @@
-@use './abstracts/layout';
+// @use './abstracts/layout';
 
-.tag {
-	background: var(--bg-tag);
-	color: var(--txt-tag);
-	font-weight: 600;
-	padding: layout.$spacing-sm layout.$spacing-md;
-}
+// .tag {
+// 	background: var(--bg-tag);
+// 	color: var(--txt-tag);
+// 	font-weight: 600;
+// 	padding: layout.$spacing-sm layout.$spacing-md;
+// }
 
 .tag-javascript {
 	background: #f0db4f;

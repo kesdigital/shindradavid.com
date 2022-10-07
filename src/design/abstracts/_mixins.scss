@@ -1,0 +1,38 @@
+/*
+  MEDIA QUERIES
+
+  We use mobile first breakpoint system, any styles not wrapped in a media query or any of these
+  mixins will apply to all screen sizes.
+*/
+
+@mixin screen-md {
+	@media screen and (min-width: 480px) {
+		@content;
+	}
+}
+
+@mixin screen-lg {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin screen-xl {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin screen-2xl {
+	@media screen and (min-width: 1280px) {
+		@content;
+	}
+}
+
+/* utility mixins */
+
+@mixin center-items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

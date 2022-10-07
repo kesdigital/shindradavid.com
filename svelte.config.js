@@ -13,8 +13,10 @@ const config = {
 				plugins: [autoprefixer]
 			},
 			scss: {
-				prependData:
-					'@use "src/lib/design/abstracts/mixins"; @use "src/lib/design/abstracts/layout";'
+				prependData: `
+          @use "src/design/abstracts/mixins";
+          @use "src/design/abstracts/variables";
+        `
 			}
 		}),
 		mdsvex(mdsvexConfig)

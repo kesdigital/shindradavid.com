@@ -7,8 +7,10 @@ const config: UserConfig = {
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData:
-					'@use "src/lib/design/abstracts/mixins"; @use "src/lib/design/abstracts/layout";'
+				additionalData: `
+          @use "src/design/abstracts/mixins";
+          @use "src/design/abstracts/variables";
+        `
 			}
 		}
 	}
