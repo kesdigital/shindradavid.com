@@ -8,8 +8,8 @@ const config: UserConfig = {
 		preprocessorOptions: {
 			scss: {
 				additionalData: `
-          @use "src/design/abstracts/mixins";
-          @use "src/design/abstracts/variables";
+          @use "src/design/abstracts/mixins" as *;
+          @use "src/design/abstracts/variables" as *;
         `
 			}
 		}

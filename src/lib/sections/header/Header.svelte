@@ -4,7 +4,7 @@
 
 <header>
 	<a href="/">shindra david</a>
-	<nav>
+	<nav aria-label="Main navigation">
 		<a href="/">Home</a>
 		<a href="/portfolio">Portfolio</a>
 		<a href="/contact">Contact</a>

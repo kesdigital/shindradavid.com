@@ -20,3 +20,14 @@ interface SeoMetadata {
 	};
 	openGraph?: {};
 }
+
+interface ArticleMetadata {
+	title: string;
+	description: string;
+	publishedOn: string;
+	tags: string[];
+}
+
+interface Article extends ArticleMetadata {
+	path: string;
+}

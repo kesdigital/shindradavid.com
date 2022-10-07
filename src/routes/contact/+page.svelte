@@ -7,6 +7,8 @@
 	<meta name="description" content="" />
 	<link rel="canonical" href={$page.url.toString()} />
 	<!-- TWITTER -->
+	<meta name="twitter:site" content="@ShindraDavid" />
+	<meta name="twitter:creator" content="@ShindraDavid" />
 	<meta name="twitter:site" content="" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:description" content="" />

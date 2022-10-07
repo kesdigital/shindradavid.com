@@ -7,9 +7,8 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 const config = defineConfig({
 	extensions: ['.md'],
 	layout: {
-		// article: 'src/lib/layouts/Article.svelte',
+		article: 'src/lib/layouts/article/Article.svelte'
 		// lesson: 'src/lib/layouts/Lesson.svelte',
-		// course: 'src/lib/layouts/Course.svelte'
 	},
 	smartypants: {
 		dashes: 'oldschool'
@@ -27,10 +26,10 @@ const config = defineConfig({
 					const tocHeading = {
 						type: 'element',
 						tagName: 'h2',
-						properties: { className: 'toc__heading' },
+						properties: { className: 'toc__heading', id: 'toc-heading' },
 						children: [{ type: 'text', value: 'Table of contents' }]
 					};
-					toc.properties.ariaLabel = 'Table of contents';
+					toc.properties.ariaLabelledby = 'toc-heading';
 					toc.children.unshift(tocHeading);
 					const aside = {
 						type: 'element',

@@ -59,3 +59,25 @@ h6 {
 	line-height: 1.2;
 	font-family: var(--ff-serif);
 }
+
+:where(h2, h3, h4, h5, h6) {
+	.icon-link {
+		position: relative;
+
+		&::before {
+			content: '#';
+			font-size: inherit;
+			position: absolute;
+			left: 1ch;
+			top: 0;
+			line-height: 1;
+			opacity: 0;
+			text-decoration: none;
+			color: var(--txt-muted);
+		}
+	}
+
+	&:hover .icon-link::before {
+		opacity: 1;
+	}
+}

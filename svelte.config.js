@@ -14,8 +14,8 @@ const config = {
 			},
 			scss: {
 				prependData: `
-          @use "src/design/abstracts/mixins";
-          @use "src/design/abstracts/variables";
+          @use "src/design/abstracts/mixins" as *;
+          @use "src/design/abstracts/variables" as *;
         `
 			}
 		}),
