@@ -5,7 +5,7 @@
 <main>
 	<h1>I'm Shindra David, a web developer</h1>
 	<div>
-		<a href="/contact">Get free consultation</a>
+		<a href="/contact">Contact me</a>
 		<a href="/portfolio">View portfolio</a>
 	</div>
 </main>
