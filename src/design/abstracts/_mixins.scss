@@ -29,6 +29,12 @@
 	}
 }
 
+@mixin screen-3xl {
+	@media screen and (min-width: 1440px) {
+		@content;
+	}
+}
+
 /* utility mixins */
 
 @mixin center-items {
