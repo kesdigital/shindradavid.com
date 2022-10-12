@@ -1,11 +1,25 @@
-// @use './abstracts/layout';
+.tag {
+	width: fit-content;
+	font-size: var(--fs-sm);
+	font-weight: 600;
+	line-height: 1;
+	padding: $spacing-xs $spacing-sm;
+}
 
-// .tag {
-// 	background: var(--bg-tag);
-// 	color: var(--txt-tag);
-// 	font-weight: 600;
-// 	padding: layout.$spacing-sm layout.$spacing-md;
-// }
+.tag-html {
+	background-color: #e44d26;
+	color: #ffffff;
+}
+
+.tag-css {
+	background-color: #264de4;
+	color: #ffffff;
+}
+
+.tag-scss {
+	background-color: #cc6699;
+	color: #ffffff;
+}
 
 .tag-javascript {
 	background: #f0db4f;
@@ -23,6 +37,11 @@
 }
 
 .tag-svelte {
+	color: #ffffff;
+	background: #ff3e00;
+}
+
+.tag-sveltekit {
 	color: #ffffff;
 	background: #ff3e00;
 }

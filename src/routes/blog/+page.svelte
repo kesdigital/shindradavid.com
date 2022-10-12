@@ -24,4 +24,6 @@
 	<meta property="og:site_name" content="Wave DJ" />
 </svelte:head>
 
-<h1>Blog</h1>
+<main>
+	<h1>Blog</h1>
+</main>

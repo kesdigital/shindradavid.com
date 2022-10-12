@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Shindra David | A freelance web developer based in Uganda</title>
+	<title>Shindra David | A freelance web developer based in Uganda.</title>
 	<meta name="description" content="" />
 	<link rel="canonical" href={$page.url.toString()} />
 	<!-- twitter -->
@@ -11,11 +11,12 @@
 	<meta name="twitter:creator" content="@ShindraDavid" />
 	<meta name="twitter:site" content="" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Shindra David | A freelance web developer based in Uganda." />
 	<meta name="twitter:description" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:image:alt" content="" />
 	<!-- open graph -->
-	<meta property="og:title" content="" />
+	<meta property="og:title" content="Shindra David | A freelance web developer based in Uganda." />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="" />
 	<meta property="og:image:alt" content="" />
@@ -25,10 +26,10 @@
 </svelte:head>
 
 <main>
-	<h1>I'm Shindra David, a web developer</h1>
+	<h1>Get a bespoke website that will delight your customers and drive sales.</h1>
+	<p>Hi, I'm Shindra David, a self taught freelance web developer based in Uganda</p>
 	<div>
 		<a href="/contact">Contact me</a>
-		<a href="/portfolio">View portfolio</a>
 	</div>
 </main>
 

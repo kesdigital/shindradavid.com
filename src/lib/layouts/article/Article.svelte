@@ -1,10 +1,13 @@
 <script>
 	//@ts-nocheck
-	// We disable type checking because of bug in mdsvex
+
+	// We disable type checking because of bug in mdsvex that prevents it from parsing
+	// typescript and scss components
+	// We also wrap it in wrapper component so we can use sass and ts there
+
 	// svelte
 	// sveltekit
 	// project
-	import { formatDate } from '$lib/utils/datetime';
 	// 3rd party
 	// icons
 	// components
