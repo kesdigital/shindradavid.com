@@ -1,9 +1,11 @@
 @use './abstracts/mixins' as *;
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Inter:wght@400;500;600&display=swap');
+
 :root {
 	/* font-family */
-	--ff-serif: sans-serif;
-	--ff-sans: 'Raleway', Helvetica, Arial, sans-serif;
+	--ff-serif: 'EB Garamond', sans-serif;
+	--ff-sans: 'Inter', Helvetica, Arial, sans-serif;
 	--ff-mono: 'Source Code Pro', 'Fira Code', 'Fira Mono', monospace;
 	/* font-size */
 	font-size: 62.5%;
@@ -66,6 +68,7 @@ h6 {
 
 		&::before {
 			content: '#';
+			font-family: var(--ff-sans);
 			font-size: inherit;
 			position: absolute;
 			left: 1ch;

@@ -26,7 +26,7 @@
 </svelte:head>
 
 <main>
-	<h1>Get a bespoke website that will delight your customers and drive sales.</h1>
+	<h1>Bespoke websites that delight customers and drive sales.</h1>
 	<p>Hi, I'm Shindra David, a self taught freelance web developer based in Uganda</p>
 	<div>
 		<a href="/contact">Contact me</a>

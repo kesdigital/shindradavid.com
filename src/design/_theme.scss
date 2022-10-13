@@ -61,18 +61,18 @@ $yellow-900: hsl(28, 73%, 26%);
 
 :root {
 	/* background-color */
-	--bg-primary: ;
-	--bg-secondary: ;
-	--bg-tertiary: ;
+	--bg-primary: hsl(0, 0%, 8%);
+	--bg-secondary: hsl(0, 0%, 16%);
+	--bg-tertiary: hsl(0, 0%, 24%);
 	--bg-code: hsl(0, 0%, 16%);
 	--bg-ok: ;
 	--bg-info: ;
 	--bg-warning: ;
 	--bg-danger: ;
 	/* text-color */
-	--txt-primary: ;
-	--txt-secondary: ;
-	--txt-tertiary: ;
+	--txt-primary: hsl(0, 0%, 96%);
+	--txt-secondary: hsl(0, 0%, 80%);
+	--txt-tertiary: hsl(0, 0%, 72%);
 	--txt-ok: ;
 	--txt-info: ;
 	--txt-warning: ;
