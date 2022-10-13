@@ -14,8 +14,12 @@
 	.footer {
 		text-align: center;
 		font-size: var(--fs-sm);
-		@include page-lr-padding;
-
+		padding: {
+			top: $spacing-lg;
+			bottom: $spacing-lg;
+		}
+		border-top: 1px solid var(--divider);
+		margin: $spacing-xl;
 		&__credits {
 			span {
 				color: $red-600;

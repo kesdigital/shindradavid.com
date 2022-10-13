@@ -20,6 +20,8 @@
 	--txt-info: ;
 	--txt-warning: ;
 	--txt-danger: ;
+
+	--divider: #{color.adjust($gray-200, $alpha: -0.2)};
 	/* brand colors */
 	--accent-color: hsl(42, 98%, 50%);
 }

@@ -51,10 +51,13 @@
 </header>
 
 <style lang="scss">
+	@use 'sass:color';
+
 	:global(body) {
 		margin-top: $header-height;
 	}
 	.header.accented {
+		--divider: #{color.adjust($gray-900, $alpha: -0.2)};
 		color: var(--bg-primary);
 		background-color: var(--accent-color);
 		box-shadow: none;
@@ -94,6 +97,30 @@
 			padding-top: $spacing-md;
 			@include page-lr-padding;
 
+			@include screen-lg {
+				position: static;
+				width: fit-content;
+				height: fit-content;
+				flex-direction: row;
+				gap: $spacing-md;
+				background-color: inherit;
+				padding: 0;
+			}
+
+			& > .divider {
+				background-color: color.adjust($gray-200, $alpha: -0.2);
+				width: 100%;
+				height: 1px;
+				margin: $spacing-md 0;
+
+				@include screen-lg {
+					height: 30px;
+					width: 1px;
+					margin: 0;
+					background-color: var(--divider);
+				}
+			}
+
 			&.open {
 				left: 0;
 			}
@@ -103,6 +130,11 @@
 				text-decoration: none;
 				color: var(--txt-primary);
 				font-family: var(--ff-serif);
+
+				@include screen-lg {
+					color: inherit;
+					font-size: var(--fs-base);
+				}
 			}
 		}
 	}

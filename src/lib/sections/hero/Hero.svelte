@@ -2,7 +2,7 @@
 
 <section class="hero">
 	<div class="hero__copy">
-		<h1>Bespoke websites that delight customers and drive sales.</h1>
+		<h1>Get a website tailored for your business and delight your customers and drive sales.</h1>
 		<div>
 			<p>Hi, I'm Shindra David, a self taught freelance web developer based in Uganda</p>
 			<a href="/contact">Contact me</a>
@@ -36,16 +36,20 @@
 			h1 {
 				font-size: var(--fs-xl);
 				font-weight: 600;
+				flex-shrink: 1;
 			}
 
-			p {
-				color: var(--txt-primary);
-			}
+			div {
+				flex-shrink: 1;
+				p {
+					color: var(--txt-primary);
+				}
 
-			a {
-				display: inline-block;
-				margin-top: $spacing-md;
-				@include btn-primary;
+				a {
+					display: inline-block;
+					margin-top: $spacing-md;
+					@include btn-primary;
+				}
 			}
 		}
 	}
