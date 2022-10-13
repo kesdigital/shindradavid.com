@@ -1,12 +1,12 @@
 @use './abstracts/mixins' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap');
 
 :root {
 	/* font-family */
-	--ff-serif: 'EB Garamond', sans-serif;
+	--ff-serif: 'Merriweather', sans-serif;
 	--ff-sans: 'Inter', Helvetica, Arial, sans-serif;
-	--ff-mono: 'Source Code Pro', 'Fira Code', 'Fira Mono', monospace;
+	--ff-mono: 'Fira Code', 'Fira Mono', monospace;
 	/* font-size */
 	font-size: 62.5%;
 	--fs-xs: 1.2rem;
@@ -51,19 +51,29 @@ body {
 	font-family: var(--ff-sans);
 }
 
-h1 {
-	font-size: var(--fs-lg);
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-weight: 600;
 	line-height: 1.2;
 	font-family: var(--ff-serif);
+}
+
+h1 {
+	font-size: var(--fs-xl);
+	font-weight: 600;
+}
+
+h2 {
+	font-size: var(--fs-lg);
+	font-weight: 600;
+}
+
+h3 {
+	font-size: var(--fs-md);
+	font-weight: 400;
 }
 
 :where(h2, h3, h4, h5, h6) {

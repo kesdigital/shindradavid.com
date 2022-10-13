@@ -4,17 +4,30 @@ import toc from '@jsdevtools/rehype-toc';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
+import getReadingTime from 'reading-time';
+import { toString } from 'mdast-util-to-string';
+
+export function remarkReadingTime() {
+	return function (tree, file) {
+		const textOnPage = toString(tree);
+		const readingTimeText = getReadingTime(textOnPage).text;
+		file.data.fm.readingTime = readingTimeText;
+	};
+}
+
 const config = defineConfig({
 	extensions: ['.md'],
+
 	layout: {
 		article: 'src/lib/layouts/article/Article.svelte'
 		// lesson: 'src/lib/layouts/Lesson.svelte',
 	},
+
 	smartypants: {
 		dashes: 'oldschool'
 	},
 
-	remarkPlugins: [],
+	remarkPlugins: [remarkReadingTime],
 	rehypePlugins: [
 		rehypeSlug,
 		[

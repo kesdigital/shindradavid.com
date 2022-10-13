@@ -1,9 +1,11 @@
 import type { RequestHandler } from './$types';
 
+import { getAllArticles } from '$lib/services/articleService';
+
 import RSS from 'rss';
 
 export const GET: RequestHandler = async () => {
-	// const posts = await getPostsData()
+	const articles = await getAllArticles();
 
 	const feed = new RSS({
 		title: `Shindra David's RSS Feed`,
@@ -12,14 +14,14 @@ export const GET: RequestHandler = async () => {
 		feed_url: 'https://shindradavid.vercel.app/rss.xml'
 	});
 
-	// posts.forEach((post) =>
-	// 	feed.item({
-	// 		title: post.title,
-	// 		description: post.description,
-	// 		url: `${siteUrl}${post.slug}`,
-	// 		date: post.published,
-	// 	})
-	// )
+	articles.forEach((article) =>
+		feed.item({
+			title: article.title,
+			description: article.description,
+			url: `https://shindradavid.vercel.app${article.path}`,
+			date: article.publishedOn
+		})
+	);
 
 	return new Response(feed.xml({ indent: true }), {
 		headers: {

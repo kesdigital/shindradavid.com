@@ -72,15 +72,17 @@
 		align-items: center;
 		justify-content: space-between;
 		height: $header-height;
+		color: var(--txt-primary);
 		background-color: var(--bg-secondary);
 		box-shadow: $shadow-sm;
 		@include page-lr-padding;
 
 		&__logo {
-			font-size: var(--fs-lg);
+			font-size: var(--fs-md);
 			text-decoration: none;
 			font-family: var(--ff-serif);
 			color: inherit;
+			font-weight: 700;
 		}
 
 		&__nav {

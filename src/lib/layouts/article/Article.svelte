@@ -27,6 +27,8 @@
 	export let sourceCodeUrl;
 	/**@type {?string}*/
 	export let liveSiteUrl;
+	/**@type {?string}*/
+	export let readingTime;
 	// state
 	// reactive statements
 	// lifecycle
@@ -62,6 +64,7 @@
 	{tags}
 	{liveSiteUrl}
 	{sourceCodeUrl}
+	{readingTime}
 >
 	<slot />
 </ArticleWrapper>

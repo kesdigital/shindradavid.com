@@ -35,7 +35,7 @@
 
 			h1 {
 				font-size: var(--fs-xl);
-				font-weight: 600;
+				font-weight: 700;
 				flex-shrink: 1;
 			}
 

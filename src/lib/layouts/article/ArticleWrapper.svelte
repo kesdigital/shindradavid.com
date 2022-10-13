@@ -15,6 +15,7 @@
 	export let modifiedOn: string;
 	export let sourceCodeUrl: string;
 	export let liveSiteUrl: string;
+	export let readingTime: string;
 	// state
 	// reactive statements
 	// lifecycle
@@ -55,6 +56,7 @@
 			<span> Last updated on: </span>
 			<time itemprop="dateModified" datetime={modifiedOn}>{formatDate(modifiedOn)}</time>
 		</p>
+		<p>Reading time: {readingTime}</p>
 		<h2>Tags</h2>
 		<ul>
 			{#each tags as tag}

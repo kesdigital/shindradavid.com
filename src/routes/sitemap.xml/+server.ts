@@ -1,15 +1,17 @@
 import type { RequestHandler } from './$types';
 
-export const GET: RequestHandler = () => {
-	const siteUrl = 'https://shindradavid.vercel.app/';
+import { getAllArticles } from '$lib/services/articleService';
+
+export const GET: RequestHandler = async () => {
+	const siteUrl = 'https://shindradavid.vercel.app';
 	const pages = [
-		'',
-		'portfolio',
-		'contact',
-		'FAQ',
-		'blog',
-		'courses'
-		// ...(await getPostsData()).map((post) => post.slug),
+		'/',
+		'/portfolio',
+		'/contact',
+		'/FAQ',
+		'/blog',
+		'/courses',
+		...(await getAllArticles()).map((post) => post.path)
 	];
 	const sitemap = `
     <?xml version="1.0" encoding="UTF-8" ?>
