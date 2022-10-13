@@ -57,6 +57,7 @@
 	.header.accented {
 		color: var(--bg-primary);
 		background-color: var(--accent-color);
+		box-shadow: none;
 	}
 	.header {
 		position: fixed;
@@ -90,6 +91,7 @@
 			width: 60vw;
 			background-color: var(--bg-secondary);
 			transition: left $animation-timing-400;
+			padding-top: $spacing-md;
 			@include page-lr-padding;
 
 			&.open {

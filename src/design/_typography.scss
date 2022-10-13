@@ -1,6 +1,6 @@
 @use './abstracts/mixins' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
 
 :root {
 	/* font-family */
@@ -51,13 +51,17 @@ body {
 	font-family: var(--ff-sans);
 }
 
+h1 {
+	font-size: var(--fs-lg);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 1.2;
 	font-family: var(--ff-serif);
 }

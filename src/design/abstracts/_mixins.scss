@@ -69,3 +69,25 @@
 		padding-right: $spacing-3xl;
 	}
 }
+
+/* component mixins */
+
+@mixin btn-base {
+	line-height: normal;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-decoration: none;
+	&:hover {
+		filter: brightness(1.1);
+	}
+}
+
+@mixin btn-primary {
+	@include btn-base();
+	min-width: 128px;
+	font-size: var(--fs-sm);
+	padding: $spacing-sm $spacing-md;
+	color: var(--txt-btn);
+	background-color: var(--bg-btn);
+	@content; // slot for overrides
+}

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+
+	import Hero from '$lib/sections/hero/Hero.svelte';
 </script>
 
 <svelte:head>
@@ -26,11 +28,7 @@
 </svelte:head>
 
 <main>
-	<h1>Bespoke websites that delight customers and drive sales.</h1>
-	<p>Hi, I'm Shindra David, a self taught freelance web developer based in Uganda</p>
-	<div>
-		<a href="/contact">Contact me</a>
-	</div>
+	<Hero />
 </main>
 
 <style lang="scss">

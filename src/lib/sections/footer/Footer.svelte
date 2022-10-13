@@ -15,5 +15,11 @@
 		text-align: center;
 		font-size: var(--fs-sm);
 		@include page-lr-padding;
+
+		&__credits {
+			span {
+				color: $red-600;
+			}
+		}
 	}
 </style>

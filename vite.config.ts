@@ -10,6 +10,7 @@ const config: UserConfig = {
 				additionalData: `
           @use "src/design/abstracts/mixins" as *;
           @use "src/design/abstracts/variables" as *;
+          @use "src/design/abstracts/pallette" as *;
         `
 			}
 		}
