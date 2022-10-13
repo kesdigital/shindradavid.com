@@ -2,11 +2,11 @@
 	export let open: boolean;
 </script>
 
-<button class="burger" id="burger" class:open on:click aria-label="Menu">
+<span class="burger" id="burger" class:open on:click aria-hidden="true">
 	<span class="bar" />
 	<span class="bar" />
 	<span class="bar" />
-</button>
+</span>
 
 <style lang="scss">
 	.burger {
