@@ -25,10 +25,20 @@
 	<meta property="og:site_name" content="Wave DJ" />
 </svelte:head>
 
-<main>
-	<h1>Frequently Asked Questions</h1>
-	<p>
+<main class="page">
+	<h1 class="page__heading">Frequently Asked Questions</h1>
+	<p class="page__description">
 		Below, you'll find answers to questions am frequently asked, if you don't find the answer you
 		are looking for, please <a href="/contact">contact me</a> and I will answer you as soon as possible.
 	</p>
 </main>
+
+<style lang="scss">
+	.page {
+		@include page-lr-padding;
+
+		&__description {
+			font-size: var(--fs-sm);
+		}
+	}
+</style>

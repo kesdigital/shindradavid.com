@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 /*
   MEDIA QUERIES
 
@@ -41,4 +43,29 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@mixin page-lr-padding {
+	/*  
+    ! Using short hand can be pRoblematic since some elements might want to define their
+    ! own top and bottom padding
+  */
+	padding-left: $spacing-md;
+	padding-right: $spacing-md;
+	@include screen-md {
+		padding-left: $spacing-lg;
+		padding-right: $spacing-lg;
+	}
+	@include screen-lg {
+		padding-left: $spacing-xl;
+		padding-right: $spacing-xl;
+	}
+	@include screen-xl {
+		padding-left: $spacing-2xl;
+		padding-right: $spacing-2xl;
+	}
+	@include screen-3xl {
+		padding-left: $spacing-3xl;
+		padding-right: $spacing-3xl;
+	}
 }

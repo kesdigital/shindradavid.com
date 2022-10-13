@@ -8,6 +8,12 @@
   results.
 -->
 
-<main>
+<main class="page">
 	<slot />
 </main>
+
+<style lang="scss">
+	.page {
+		@include page-lr-padding;
+	}
+</style>

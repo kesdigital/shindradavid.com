@@ -75,3 +75,6 @@
 		<slot />
 	</section>
 </article>
+
+<style lang="scss">
+</style>

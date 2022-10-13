@@ -8,6 +8,12 @@ declare namespace App {
 	// interface Platform {}
 }
 
+declare namespace svelte.JSX {
+	interface HTMLProps<T> {
+		onclick_outside_nav?: (e: CustomEvent) => void;
+	}
+}
+
 interface SeoMetadata {
 	title: string;
 	description: string;
