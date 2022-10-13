@@ -5,7 +5,7 @@ const getArticles = async () => {
 		const articles: Article[] = await Promise.all(
 			Object.entries(import.meta.glob('/src/routes/blog/**/+page.md')).map(
 				async ([path, resolver]) => {
-					const { metadata }: any = await resolver();
+					const { metadata, default: content }: any = await resolver();
 					const articleMetadata: ArticleMetadata = metadata;
 					const articlePath = path.slice(11, -9).replace('/(blog)', ''); // remove the ending /+page.md and starting ../..
 					return { ...articleMetadata, path: articlePath };
