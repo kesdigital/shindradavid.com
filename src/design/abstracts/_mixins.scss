@@ -1,0 +1,93 @@
+@use './variables' as *;
+
+/*
+  MEDIA QUERIES
+
+  We use mobile first breakpoint system, any styles not wrapped in a media query or any of these
+  mixins will apply to all screen sizes.
+*/
+
+@mixin screen-md {
+	@media screen and (min-width: 480px) {
+		@content;
+	}
+}
+
+@mixin screen-lg {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin screen-xl {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin screen-2xl {
+	@media screen and (min-width: 1280px) {
+		@content;
+	}
+}
+
+@mixin screen-3xl {
+	@media screen and (min-width: 1440px) {
+		@content;
+	}
+}
+
+/* utility mixins */
+
+@mixin center-items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin page-lr-padding {
+	/*  
+    ! Using short hand can be pRoblematic since some elements might want to define their
+    ! own top and bottom padding
+  */
+	padding-left: $spacing-md;
+	padding-right: $spacing-md;
+	@include screen-md {
+		padding-left: $spacing-lg;
+		padding-right: $spacing-lg;
+	}
+	@include screen-lg {
+		padding-left: $spacing-xl;
+		padding-right: $spacing-xl;
+	}
+	@include screen-xl {
+		padding-left: $spacing-2xl;
+		padding-right: $spacing-2xl;
+	}
+	@include screen-3xl {
+		padding-left: $spacing-3xl;
+		padding-right: $spacing-3xl;
+	}
+}
+
+/* component mixins */
+
+@mixin btn-base {
+	line-height: normal;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-decoration: none;
+	&:hover {
+		filter: brightness(1.1);
+	}
+}
+
+@mixin btn-primary {
+	@include btn-base();
+	min-width: 128px;
+	font-size: var(--fs-sm);
+	padding: $spacing-sm $spacing-md;
+	color: var(--txt-btn);
+	background-color: var(--bg-btn);
+	@content; // slot for overrides
+}

@@ -7,3 +7,33 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+
+declare namespace svelte.JSX {
+	interface HTMLProps<T> {
+		onclick_outside_nav?: (e: CustomEvent) => void;
+	}
+}
+
+interface SeoMetadata {
+	title: string;
+	description: string;
+	twitter?: {
+		title: string;
+		description: string;
+		type: 'summary' | 'summary_large_image';
+		image: string;
+		imageAlt: string;
+	};
+	openGraph?: {};
+}
+
+interface ArticleMetadata {
+	title: string;
+	description: string;
+	publishedOn: string;
+	tags: string[];
+}
+
+interface Article extends ArticleMetadata {
+	path: string;
+}

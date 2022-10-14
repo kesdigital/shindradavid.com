@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input,
+select,
+button,
+textarea {
+	border: none;
+	outline: none;
+	color: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	background-color: inherit;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: var(--accent-color);
+	text-decoration-thickness: 2px;
+	font-weight: 500;
+	color: var(--txt-strong);
+}
+
+ul,
+ol {
+	li {
+		margin-left: $spacing-lg;
+	}
+}
