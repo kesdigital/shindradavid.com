@@ -8,5 +8,5 @@
 	<source srcset="mdn-logo-wide.png" media="(min-width: 600px)" />
 	<source srcset="photo.avif" type="image/avif" />
 	<source srcset="photo.webp" type="image/webp" />
-	<img alt="" loading="lazy" decoding="async" width="672" height="448" src="" />
+	<img alt="" {loading} decoding="async" width="672" height="448" src="" />
 </picture>

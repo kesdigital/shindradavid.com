@@ -8,8 +8,8 @@
 
 <svelte:head>
 	<meta name="theme-color" content="#16181d" />
-	<link rel="manifest" href="manifest.webmanifest" />
-	<link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
+	<link rel="manifest" href="/manifest.webmanifest" />
+	<link rel="alternate" href="/rss.xml" type="application/rss+xml" title="RSS" />
 </svelte:head>
 
 <Header />
